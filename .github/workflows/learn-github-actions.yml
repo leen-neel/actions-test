@@ -18,3 +18,11 @@ jobs:
               env:
                   TEST: ${{ secrets.TEST }}
               run: npm run run
+
+    bashing-my-head:
+        runs-on: ubuntu-latest
+        steps:
+            - shell: bash
+              env:
+                  TEST: ${{ secrets.TEST }}
+              run: echo "${{TEST}}"
