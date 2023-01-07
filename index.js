@@ -8,7 +8,7 @@ const route = process.env.ROUTE;
 async function get() {
     try {
         const data = await fetch(`https://and249-api.cyclic.app/api/${route}`);
-        console.log(await data.json());
+        console.log(data.headers);
     } catch (error) {
         console.error(error);
     }
