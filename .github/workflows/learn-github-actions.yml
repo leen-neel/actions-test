@@ -10,7 +10,7 @@ jobs:
 
             - name: Setup npm
               uses: actions/setup-node@v3
-              run: npm i dotenv
+              run: npm i
 
             - name: test run
               env:
