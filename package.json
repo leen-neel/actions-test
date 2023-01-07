@@ -1,0 +1,24 @@
+{
+    "name": "actions-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "run": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leen-neel/actions-test.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/leen-neel/actions-test/issues"
+    },
+    "homepage": "https://github.com/leen-neel/actions-test#readme",
+    "dependencies": {
+        "dotenv": "^16.0.3"
+    }
+}
