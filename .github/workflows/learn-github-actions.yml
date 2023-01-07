@@ -12,6 +12,5 @@ jobs:
               uses: actions/setup-node@v3
 
             - name: test run
-              uses: actions/checkout@v3
               env: ${{ secrets.TEST }}
               run: npm run run
