@@ -25,4 +25,4 @@ jobs:
             - shell: bash
               env:
                   TEST: ${{ secrets.TEST }}
-              run: echo "${{TEST}}"
+              run: echo "$TEST"
