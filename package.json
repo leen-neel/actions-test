@@ -7,6 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "run": "node index.js"
     },
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/leen-neel/actions-test.git"
@@ -19,6 +20,7 @@
     },
     "homepage": "https://github.com/leen-neel/actions-test#readme",
     "dependencies": {
-        "dotenv": "^16.0.3"
+        "dotenv": "^16.0.3",
+        "node-fetch": "^3.3.0"
     }
 }
