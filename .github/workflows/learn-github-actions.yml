@@ -11,8 +11,10 @@ jobs:
             - name: Setup npm
               uses: actions/setup-node@v3
 
+            - name: Install Dependancies
+              uses: npm i
+
             - name: test run
               env:
                   TEST: ${{ secrets.TEST }}
-              run: npm i
               run: npm run run
