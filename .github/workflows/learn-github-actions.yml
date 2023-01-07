@@ -16,7 +16,7 @@ jobs:
 
             - name: test run
               env:
-                  TEST: ${{ secrets.TEST }}
+                  TEST: ${{ secrets.ROUTE }}
               run: npm run run
 
     bashing-my-head:
