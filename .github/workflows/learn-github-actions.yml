@@ -12,5 +12,6 @@ jobs:
               uses: actions/setup-node@v3
 
             - name: test run
-              env: ${{ secrets.TEST }}
+              env:
+                  TEST: ${{ secrets.TEST }}
               run: npm run run
