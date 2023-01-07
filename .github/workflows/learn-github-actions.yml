@@ -12,7 +12,7 @@ jobs:
               uses: actions/setup-node@v3
 
             - name: Install Dependancies
-              uses: npm i
+              run: npm i
 
             - name: test run
               env:
