@@ -2,11 +2,14 @@ name: Install tools
 description: Checks out the repo and installs npm along with the dependancies
 
 runs:
-    using: ubuntu-latest
+    using: composite
 
     steps:
         - name: Setup npm
           uses: actions/setup-node@v3
+          with:
+              node-version: 16
+              cache: npm
 
         - name: Install dependancies
           run: npm i
