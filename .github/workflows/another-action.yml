@@ -1,0 +1,18 @@
+name: run-on-time
+run-name: A cron job test
+on:
+    cron: '*/5 * * * *'
+    workflow_dispatch:
+
+jobs:
+    print-stuff:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Get the repository
+              uses: actions/checkout@v3
+
+            - name: Setup npm
+              use: actions/setup-node@v3
+
+            - name: Run the JS file
+              run: node cron.js
