@@ -9,11 +9,8 @@ jobs:
     print-stuff:
         runs-on: ubuntu-latest
         steps:
-            - name: Get the repository
-              uses: actions/checkout@v3
-
-            - name: Setup npm
-              uses: actions/setup-node@v3
+            - name: Setup
+              uses: ./.github/actions/setup
 
             - name: Run the JS file
               run: node cron.js

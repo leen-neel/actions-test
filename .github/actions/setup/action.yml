@@ -1,0 +1,15 @@
+name: Install tools
+description: Checks out the repo and installs npm along with the dependancies
+
+runs:
+    using: ubuntu-latest
+
+    steps:
+        - name: Get the repository
+          uses: actions/checkout@v3
+
+        - name: Setup npm
+          uses: actions/setup-node@v3
+
+        - name: Install dependancies
+          run: npm i
