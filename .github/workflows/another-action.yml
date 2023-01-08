@@ -1,7 +1,8 @@
 name: run-on-time
 run-name: A cron job test
 on:
-    cron: '*/5 * * * *'
+  schedule:
+    - cron: '*/5 * * * *'
     workflow_dispatch:
 
 jobs:
