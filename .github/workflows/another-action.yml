@@ -1,4 +1,4 @@
-name: run-on-time
+name: Email service
 run-name: A cron job test
 on:
     schedule:
