@@ -1,12 +1,12 @@
 name: Email service
-run-name: A cron job test
+run-name: Send email to me
 on:
     schedule:
         - cron: '30 18 * * *'
     workflow_dispatch:
 
 jobs:
-    print-stuff:
+    send-mail:
         runs-on: ubuntu-latest
         steps:
             - name: checkout
