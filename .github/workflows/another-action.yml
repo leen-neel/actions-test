@@ -16,4 +16,7 @@ jobs:
               uses: ./.github/actions/setup
 
             - name: Run the JS file
+              env:
+                  EMAIL: ${{ secrets.EMAIL }}
+                  PASS: ${{ secrets.PASS }}
               run: node email.js
