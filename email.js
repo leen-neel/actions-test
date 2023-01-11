@@ -3,9 +3,9 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const transport = nodemailer.createTransport({
-    host: 'smtpout.secureserver.net',
-    port: 587,
-    secure: false, // upgrade later with STARTTLS
+    host: 'mail.and249.codes',
+    port: 465,
+    secure: 'SSL', // upgrade later with STARTTLS
     auth: {
         user: process.env.EMAIL,
         pass: process.env.PASS,
@@ -37,7 +37,9 @@ let message = {
 };
 
 try {
-    transport.sendMail(message);
+    transport.sendMail(message).then((info) => {
+        console.log('Message sent!');
+    });
 } catch (error) {
     console.error(error);
 }
