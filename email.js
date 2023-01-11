@@ -39,6 +39,7 @@ let message = {
 try {
     transport.sendMail(message).then((info) => {
         console.log('Message sent!');
+        console.log(`Time: ${time}`);
     });
 } catch (error) {
     console.error(error);
