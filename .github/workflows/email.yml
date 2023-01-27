@@ -1,6 +1,6 @@
 name: Email service
 run-name: Send email to me
-on: workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
     send-mail:
